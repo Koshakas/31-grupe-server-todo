@@ -45,12 +45,14 @@ class PageHome extends Page {
     createTaskList(array) {
         let result = "";
         for (const task of array) {
+            const date = new Date(task.date);
+            const dateString = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
             result += `
             <tr>
                 <td>${task.id}</td>
                 <td>${task.text}</td>
                 <td>${task.status}</td>
-                <td>${task.date}</td>
+                <td>${dateString}</td>
                 <td>
                     <button>Update</button>
                     <button>Delete</button>
@@ -67,6 +69,7 @@ class PageHome extends Page {
         console.log(array);
         return `
         <h1>TODO list</h1>
+        <a href="/new" class="btn">Add new task</a>
         <table>
             <tr>
                 <th>ID</th>
