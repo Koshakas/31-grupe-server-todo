@@ -66,7 +66,6 @@ class PageHome extends Page {
 
     async bodyHTML() {
         const array = await this.getData();
-        console.log(array);
         return `
         <h1>TODO list</h1>
         <a href="/new" class="btn">Add new task</a>
@@ -75,7 +74,7 @@ class PageHome extends Page {
                 <th>ID</th>
                 <th>Task name</th>
                 <th>Status</th>
-                <th>Date</th>
+                <th>Date</th> 
                 <th>Action</th>
             </tr>
             ${this.createTaskList(array)}

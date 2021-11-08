@@ -9,5 +9,6 @@
 /* components */
 @import "../components/button.css";
 @import "../components/table.css";
+@import "../components/form.css";
 
 /* CUSTOM PAGE STYLE */
