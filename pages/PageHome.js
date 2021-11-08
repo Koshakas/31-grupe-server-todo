@@ -1,26 +1,5 @@
 const Page = require("../components/Page.js");
 
-// const array = [
-//     {
-//         id: 1,
-//         text: "Get Milk",
-//         status: "new",
-//         date: "2021-11-06"
-//     },
-//     {
-//         id: 2,
-//         text: "Mow the lawn",
-//         status: "pending",
-//         date: "2021-11-05"
-//     },
-//     {
-//         id: 3,
-//         text: "Walk the dog",
-//         status: "done",
-//         date: "2021-11-04"
-//     }
-// ];
-
 class PageHome extends Page {
     constructor(connection) {
         super();
